@@ -23,5 +23,12 @@ module.exports = defineConfig({
         injectCss: true,
       })
     ]
-  } 
+  },
+  css: {
+    loaderOptions: {
+      sass: {
+        additionalData: `@import '~@/style/define.scss';`
+      }
+    }
+  }
 })
